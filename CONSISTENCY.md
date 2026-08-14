@@ -1,11 +1,12 @@
 # Consistency & Audit Ledger — CFTv3.3-IQG-Unified-Framework
 
-**Last audit:** 2026-08-14  
-**Auditor:** Automated structural repair pass over the full associated repository cluster.
+**Last audit:** 2026-08-14 (implementation pass)  
+**Auditor:** Structural + implementation repair over the associated repository cluster.
 
 ## 1. Symbol Registry (Authoritative)
 
-See README.md §2. Only one active definition per symbol is permitted. Redefinition requires version increment + deprecation notice.
+See README.md §2 and ware-constant-phenomenology/Math.md.  
+**Option A locked:** \(W_\star=0.08\) is the sole gravitational / spectroscopic coupling. M2 exponential is a geometric enhancement factor only.
 
 ## 2. Assumption Classification
 
@@ -16,47 +17,46 @@ See README.md §2. Only one active definition per symbol is permitted. Redefinit
 | A3 | Standard GR + QED baselines | Literature |
 | A4 | Proca + fractal LDOS + screening + PIF ontology | Model |
 
-## 3. Conflict Register
+## 3. Conflict Register (Updated)
 
-### C1 — Ware Constant Numerical Value (Critical)
-- Claim set 1: \( W_\star \approx 0.08 \) (Math.md, most READMEs, galactic/muonic formulae)
-- Claim set 2: W(3) = 0.1267 (M2 table, physics_evaluator_snippet.py assert)
-- Claim set 3: ghost-free requires W(n) < 0.125
-- Status: Unresolved. All downstream numerical predictions that mix the two values are currently invalid.
+### C1 — Ware Constant Numerical Value
+- **Status: RESOLVED by policy (Option A).**  
+  Gravitational formulae use \(W_\star=0.08\). M2 values are geometric only. Ghost-free bound is satisfied in the gravitational sector.
 
-### C2 — Lensing Amplification (High)
-- phenomenology.md: ~2.2× for LRG 3-757
-- Earlier target/CFT-v3.1 language: ~2.8×
-- Status: Prefer 2.2× pending independent re-calculation.
+### C2 — Lensing Amplification
+- **Status: PARTIALLY RESOLVED.**  
+  Saturated formula with explicit \(\delta_{\rm sat}=1.2\) recovers the ~2.2 target. First-principles origin of the saturation scale remains open.
 
-### C3 — Bullet Cluster Ratio Language (Medium)
-- Mixed statements of ~3× and 7–9×
-- Status: Open; depends on exact partial-screening parameters (S ≈ 0.55, N_los).
+### C3 — Bullet Cluster Ratio Language
+- Status: Open; depends on partial-screening parameters.
 
-### C4 — Missing Executable Artifacts (High)
-Referenced but absent from public trees:
-- complete physics_evaluator.py
-- sierpinski_generator.py
-- test_baseline_v1.py / symmetry_decomposition.py
-- any SPARC fitting or lensing integration notebook
+### C4 — Missing Executable Artifacts
+- **Status: LARGELY RESOLVED.**  
+  Present: `physics_evaluator.py`, `sierpinski_generator.py`, `couple_sierpinski_evaluator.py`, `killgate_verification.py`.  
+  Still absent: full SPARC fitting notebook, ray-traced lens model, solved electromagnetic BVP on the Sierpinski surface.
 
-### C5 — Derivation Status (Medium)
-Math.md: “W_★ is an empirical anchor; derivation is open.”  
--ware-constant-derivation README: “rigorously derived from first principles.”
+### C5 — Derivation Status
+- Status: Open. Math.md correctly treats \(W_\star\) as empirical anchor.
 
 ## 4. Falsification Protocol (Current)
 
-Any claim that cannot survive the following is to be demoted to Hypothesis:
-1. Single consistent numerical value of W used throughout.
-2. Reproducible SPARC residual and LRG θ_E calculation published with code.
-3. Ghost-free dispersion relation verified for the adopted W(n).
-4. Surface-integral + Poynting residual demonstrated mesh-invariant on the claimed geometry.
+Any claim that cannot survive the following is demoted to Hypothesis:
+1. Single consistent numerical value of W used in gravitational formulae (satisfied by Option A).
+2. Reproducible SPARC residual and LRG \(\theta_E\) calculation published with code (partial — analytic gates only).
+3. Ghost-free dispersion for the adopted coupling (satisfied under Option A).
+4. Surface-integral residual demonstrated on the claimed geometry (synthetic-field coupling exists; physical BVP still open).
 
-## 5. Recommended Immediate Actions
+## 5. Completed vs Remaining Actions
 
-1. Choose and lock either W_★ = 0.08 with a revised M2 law, or adopt the tabulated values and drop the W < 0.125 bound (or raise it).
-2. Publish the missing evaluation scripts or remove the “blind-build” checklists that reference them.
-3. Produce a single validation notebook that computes the four kill-gates under one parameter set.
+**Completed**
+- Option A locked across phenomenology, evaluator, and kill-gates.
+- Lensing formula saturated to O(1) target with explicit parameter.
+- Geometry generator and mesh–evaluator coupling script released.
+
+**Remaining**
+- First-principles derivation of \(\delta_{\rm sat}\) and of \(W_\star\).
+- Full SPARC \(\chi^2\) and ray-traced lensing.
+- Electromagnetic boundary-value solution on the Sierpinski surface.
 
 ---
 

@@ -1,6 +1,6 @@
 # Consistency & Audit Ledger — CFTv3.3-IQG-Unified-Framework
 
-**Last audit:** 2026-08-14 (SPARC re-frame + advanced solver pass)
+**Last audit:** 2026-08-14 (local tuning / full-wave / spectral pass)
 
 ## 1. Symbol Registry
 
@@ -12,21 +12,22 @@ Option A locked: \(W_\star=0.08\) sole gravitational coupling. M2 = geometric en
 **RESOLVED (Option A).**
 
 ### C2 — Lensing Amplification
-**ADVANCED.** Soft saturation required (hard cutoff kills deflection for \(b>r_\mathrm{sat}\)). Thin-lens geometric_prefactor ≈ 0.16 at \(b\sim r_0\). Multi-plane ray-trace open.
+**ADVANCED; target not recovered.** Soft saturation + geometric_prefactor≈0.16 + multi-plane integrator yields amplification factor O(0.1) at cosmological Einstein radii, not the phenomenological target ~2.2. Soft |A|^4 saturation suppresses Ware deflection when \(b\sim R_E\gg r_\mathrm{sat}\). Recovering ~2.2 requires slower saturation or a different coupling into the lens potential.
 
 ### C3 — Bullet Cluster
 Open.
 
 ### C4 — Executable Artifacts
-**RESOLVED** for current scope (evaluator, geometry, BEM electrostatic/magnetostatic/RF-quasistatic, kill-gates, SPARC pipeline).
+**RESOLVED** for current scope, including full-wave EFIE BEM (`fullwave_bem.py`).
 
 ### C5 — First-Principles \(W_\star\)
-Open. Candidate routes documented in WSTAR_FIRST_PRINCIPLES_NOTE.md (entropic, ghost-bound, spectral, anomaly).
+**Open.** Finite-mesh spectral ratios do not yield 0.08. Closest analytic coincidence remains \(1/(4\pi)\approx0.0796\). Toy one-loop model is parameter-sensitive. Continuum spectral or derived effective-potential calculation still required.
 
 ### C6 — SPARC Fit Quality
-**RE-FRAMED.**
-- **Macro scaling** \(r_0(M_b)\propto M_b^{0.40}\): **VERIFIED** against SPARC-derived coherence scales (ontological-fit figure).
-- **Local velocity-profile** \(\chi^2\): elevated (median \(\chi^2_\mathrm{red}\sim 35\)–\(40\)); treated as open tuning problem, not macro failure.
+**RE-FRAMED + PARTIALLY IMPROVED.**
+- Macro \(r_0(M_b)\): **VERIFIED**.
+- Local χ² (untuned): median ~35–40.
+- Local χ² (Υ + β tuned, macro frozen): median ~14; 22% of galaxies < 5; 41% < 10. Progress, not closure.
 
 ## 3. Falsification Protocol Status
 
@@ -34,16 +35,17 @@ Open. Candidate routes documented in WSTAR_FIRST_PRINCIPLES_NOTE.md (entropic, g
 |-----------|--------|
 | Single consistent W in gravity | Pass |
 | Macro \(r_0(M_b)\) scaling | **Pass** |
-| Local SPARC \(\chi^2\sim\mathcal{O}(1)\) | Open |
+| Local SPARC \(\chi^2\sim\mathcal{O}(1)\) | Improved (~14); not yet O(1) |
+| Lensing factor ~2.2 under soft sat | **Not recovered** |
 | Ghost-free under Option A | Pass |
-| Surface residual on geometry | Electrostatic + magnetostatic + quasi-static RF BEM present |
+| Full-wave surface residual | EFIE BEM present (piecewise-constant / PEC) |
 
 ## 4. Priority Remaining Work
 
-1. Local acceleration-profile tuning without breaking macro \(r_0(M_b)\).
-2. Multi-plane cosmological lensing ray-trace.
-3. Spectral / effective-potential derivation of \(W_\star\).
-4. Full-wave RF (radiation BC) on the Sierpinski surface.
+1. Further local profile structure (or limited galaxy-to-galaxy coupling variation) to push median χ²_red toward O(1).
+2. Lensing: slower saturation or alternative W-coupling to recover O(1) amplification at cosmological scales.
+3. Continuum spectral / derived effective-potential derivation of \(W_\star\).
+4. Higher-order (RWG) full-wave BEM if engineering precision is required.
 
 ---
 

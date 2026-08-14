@@ -1,6 +1,6 @@
 # Consistency & Audit Ledger — CFTv3.3-IQG-Unified-Framework
 
-**Last audit:** 2026-08-14 (exhaustive multi-repo audit)
+**Last audit:** 2026-08-14 (historical recovery pass)
 
 ## 1. Symbol Registry
 
@@ -24,7 +24,7 @@ Macro: \(r_0=0.45\,\mathrm{kpc}\,(M_b/10^{11}M_\odot)^{0.40}\) — verified.
 | Repo | Status |
 |------|--------|
 | CFTv3.3-IQG-Unified-Framework | Ledger active |
-| ware-constant-phenomenology | Canonical math + pipelines |
+| ware-constant-phenomenology | Canonical math + pipelines; Math.md restored |
 | stress-tensor-modification | Evaluator + BEM/EFIE |
 | sierpinski-geometry-045 | Generator working |
 | coherence-drive | Pointer aligned |
@@ -44,7 +44,14 @@ Macro: \(r_0=0.45\,\mathrm{kpc}\,(M_b/10^{11}M_\odot)^{0.40}\) — verified.
 | Bullet r0/c lag | **Fail** |
 | Ghost-free Option A | Pass |
 
-## 5. Priority Remaining Work
+## 5. Historical Audit (2026-08-14)
+
+- `git log --diff-filter=D --summary` on all 10 repos: **zero deleted files**.
+- No recoverable dangling commits, stashes, or alternate branches.
+- Only content loss identified: Math.md condensed 152→31 lines during status passes; **restored** from peak historical commit f7094ad merged with current locked baseline (phenomenology Math.md v0.3.9).
+- Core `.tex` equation files were never deleted.
+
+## 6. Priority Remaining Work
 
 1. Viable Bullet lag mechanism or revise cluster-scale coherence.
 2. Local acceleration law → median χ²_red O(1).

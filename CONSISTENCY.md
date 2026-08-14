@@ -1,62 +1,48 @@
 # Consistency & Audit Ledger — CFTv3.3-IQG-Unified-Framework
 
-**Last audit:** 2026-08-14 (implementation pass)  
-**Auditor:** Structural + implementation repair over the associated repository cluster.
+**Last audit:** 2026-08-14 (hole-closure pass)
 
-## 1. Symbol Registry (Authoritative)
+## 1. Symbol Registry
 
-See README.md §2 and ware-constant-phenomenology/Math.md.  
-**Option A locked:** \(W_\star=0.08\) is the sole gravitational / spectroscopic coupling. M2 exponential is a geometric enhancement factor only.
+Option A locked: \(W_\star=0.08\) is the sole gravitational coupling. M2 is geometric enhancement only.
 
-## 2. Assumption Classification
-
-| ID | Statement | Class |
-|----|-----------|-------|
-| A1 | User intent is scientific consolidation | User |
-| A2 | SPARC, LRG 3-757, muonic H, Bullet Cluster are the kill-gates | Empirical |
-| A3 | Standard GR + QED baselines | Literature |
-| A4 | Proca + fractal LDOS + screening + PIF ontology | Model |
-
-## 3. Conflict Register (Updated)
+## 2. Conflict Register (Updated)
 
 ### C1 — Ware Constant Numerical Value
-- **Status: RESOLVED by policy (Option A).**  
-  Gravitational formulae use \(W_\star=0.08\). M2 values are geometric only. Ghost-free bound is satisfied in the gravitational sector.
+**RESOLVED by policy (Option A).**
 
 ### C2 — Lensing Amplification
-- **Status: PARTIALLY RESOLVED.**  
-  Saturated formula with explicit \(\delta_{\rm sat}=1.2\) recovers the ~2.2 target. First-principles origin of the saturation scale remains open.
+**PARTIALLY RESOLVED.** \(\delta_\mathrm{sat}\) mapped to microscopic \(\xi=\lambda_A\langle A^2\rangle/W\). Target 1.2 requires \(\xi\approx27.13\) (geometric_prefactor=1). Ray-trace of geometric_prefactor still open.
 
-### C3 — Bullet Cluster Ratio Language
-- Status: Open; depends on partial-screening parameters.
+### C3 — Bullet Cluster
+Open.
 
-### C4 — Missing Executable Artifacts
-- **Status: LARGELY RESOLVED.**  
-  Present: `physics_evaluator.py`, `sierpinski_generator.py`, `couple_sierpinski_evaluator.py`, `killgate_verification.py`.  
-  Still absent: full SPARC fitting notebook, ray-traced lens model, solved electromagnetic BVP on the Sierpinski surface.
+### C4 — Executable Artifacts
+**LARGELY RESOLVED.** Evaluator, geometry generator, BEM, kill-gates, SPARC pipeline present.
 
-### C5 — Derivation Status
-- Status: Open. Math.md correctly treats \(W_\star\) as empirical anchor.
+### C5 — Derivation Status of \(W_\star\)
+Open.
 
-## 4. Falsification Protocol (Current)
+### C6 — SPARC Fit Quality (NEW / CRITICAL)
+**FAIL under transparent baseline.**  
+Median \(\chi^2_\mathrm{red}\approx40\) (asymptotic model) and \(\approx34\) (provisional radial form) with per-galaxy \(\Upsilon\). The earlier claim of "<5% residual" is **not supported**. Galactic-scale success is unverified until a calibrated model reaches median \(\chi^2_\mathrm{red}\sim\mathcal{O}(1)\).  
+See ware-constant-phenomenology/SPARC_CHI2_REPORT.md.
 
-Any claim that cannot survive the following is demoted to Hypothesis:
-1. Single consistent numerical value of W used in gravitational formulae (satisfied by Option A).
-2. Reproducible SPARC residual and LRG \(\theta_E\) calculation published with code (partial — analytic gates only).
-3. Ghost-free dispersion for the adopted coupling (satisfied under Option A).
-4. Surface-integral residual demonstrated on the claimed geometry (synthetic-field coupling exists; physical BVP still open).
+## 3. Falsification Protocol Status
 
-## 5. Completed vs Remaining Actions
+| Criterion | Status |
+|-----------|--------|
+| Single consistent W in gravity formulae | Pass (Option A) |
+| Reproducible SPARC \(\chi^2\) | Executed — **fails** simple model |
+| Ghost-free under adopted coupling | Pass under Option A |
+| Surface residual on claimed geometry | Electrostatic BEM present; RF open |
 
-**Completed**
-- Option A locked across phenomenology, evaluator, and kill-gates.
-- Lensing formula saturated to O(1) target with explicit parameter.
-- Geometry generator and mesh–evaluator coupling script released.
+## 4. Priority Remaining Work
 
-**Remaining**
-- First-principles derivation of \(\delta_{\rm sat}\) and of \(W_\star\).
-- Full SPARC \(\chi^2\) and ray-traced lensing.
-- Electromagnetic boundary-value solution on the Sierpinski surface.
+1. **Highest:** Recalibrate galactic acceleration law / \(r_0(M)\) until SPARC median \(\chi^2_\mathrm{red}\sim\mathcal{O}(1)\).
+2. Geodesic integration for lensing geometric_prefactor.
+3. RF / magnetostatic BVP on the Sierpinski surface.
+4. First-principles derivation of \(W_\star\).
 
 ---
 

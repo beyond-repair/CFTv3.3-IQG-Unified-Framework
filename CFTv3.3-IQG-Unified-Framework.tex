@@ -5,126 +5,90 @@
 \usepackage{booktabs}
 \usepackage{hyperref}
 \usepackage{tcolorbox}
-\usepackage{longtable}
 
-\title{Comprehensive Verification of the Unified Framework: Theoretical and Empirical Integration of Coherence Field Theory (CFT v3.3) and Informational Quantum Gravity (IQG)}
+\title{Comprehensive Verification of the Unified Framework:\\Theoretical and Empirical Integration of Coherence Field Theory (CFT v3.3) and Informational Quantum Gravity (IQG)}
 \author{William B. Ware}
-\date{March 2026}
+\date{August 2026 (consistency repair)}
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-The historical trajectory of theoretical physics has long been characterized by a persistent schism between General Relativity (GR) and Quantum Mechanics (QM). The unified framework proposed here synthesizes Coherence Field Theory (CFT v3.3) and Informational Quantum Gravity (IQG) to resolve this duality by identifying quantum information as the fundamental substrate of reality. This paper verifies the integration, focusing on the mathematical consistency of Screened Vacuum Coherence (SVC), the information-theoretic derivation of the Ware Constant $W \approx 0.08$, and empirical performance against anomalies in muonic hydrogen spectroscopy, galactic rotation curves, and ultramassive black holes.
+The historical trajectory of theoretical physics has long been characterized by a persistent schism between General Relativity (GR) and Quantum Mechanics (QM). The unified framework synthesizes Coherence Field Theory (CFT v3.3) and Informational Quantum Gravity (IQG) by identifying quantum information as the fundamental substrate of reality. This paper registers the mathematical structure of Screened Vacuum Coherence (SVC), the Ware Constant family, and the current empirical status against muonic hydrogen, galactic rotation curves, and strong-lensing systems. All claims are accompanied by explicit assumption classification and a public consistency ledger that documents unresolved numerical conflicts inside the associated repository cluster.
 \end{abstract}
 
-\section{Primary Reference Repository}
-All core definitions, derivations, and empirical validations of the Ware Constant $W \approx 0.08$, Screened Vacuum Coherence (SVC), and multi-scale kill-gates are maintained in the canonical phenomenology repository:
+\section{Primary Reference Repository and Scope}
+All core definitions, derivations, and multi-scale validations of the Ware Constant family, SVC screening, the modified Einstein equations, and the Schwarzschild-Ware metric are maintained in the canonical phenomenology repository:
 
 \url{https://github.com/beyond-repair/ware-constant-phenomenology}
 
-This work builds directly on that foundation, extending it to the full Primordial Informational Field (PIF) $\to$ Quantules ontology, Quantum Information Evolution Principle (QIEP), and consciousness emergence threshold $s \approx 0.85$.
+This synthesis extends that foundation with the Primordial Informational Field (PIF) $\to$ Quantules ontology and provides the authoritative cross-repository consistency register (see the companion CONSISTENCY.md).
 
-\section{Ontological Foundations of the Primordial Informational Field}
-The Primordial Informational Field (PIF) is a timeless, non-local substrate that generates spacetime. Its quantum informational density $\rho$ encodes all potential physical states.
+\section{Symbol Registry}
+\begin{itemize}
+    \item $W_\star \approx 0.08$ --- locked phenomenological / galactic / muonic anchor.
+    \item $W(n) = 0.08 \cdot e^{0.23(n-1)}$ --- provisional M2 engineering scaling (currently conflicts with the stated ghost-free bound $W(n)<0.125$).
+    \item $r_0(M_b)\propto M_b^{0.40}$ --- coherence scale.
+    \item $S(\rho)$ --- screening function (0 dense/chaotic, 1 virialized).
+\end{itemize}
 
-The evolution of $\rho$ follows the Quantum Information Evolution Principle (QIEP):
-
+\section{Ontological Foundations}
+The Primordial Informational Field (PIF) is a timeless, non-local substrate. Its informational density $\rho$ evolves according to the Quantum Information Evolution Principle (QIEP):
 \begin{equation}
-\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{v}) = S_{\rm ent}
+\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{v}) = S_{\rm ent}.
+\end{equation}
+Discrete stable units (Quantules) encode mass, charge, spin and metric curvature. Gravity emerges as informational backreaction.
+
+\section{Mathematical Structure}
+Informational stress-energy enters the Einstein equations:
+\begin{equation}
+G_{\mu\nu} = 8\pi G \bigl(T_{\mu\nu} + W\, T_{\mu\nu}^{\rm info}\bigr).
+\end{equation}
+Weak-field limit:
+\begin{equation}
+a(r) = -\frac{G M_b(r)}{r^2} + W \frac{G M_b(r)}{r_0 r}, \qquad
+v_\infty = \sqrt{\frac{W G M_b}{r_0}}.
+\end{equation}
+Static spherically-symmetric solution (Schwarzschild-Ware) contains a logarithmic term regulated by $|A|^4$ saturation (details in the phenomenology repository).
+
+\section{Empirical Status and Kill-Gates}
+\subsection{Muonic sector}
+Using the locked anchor $W_\star$:
+\begin{equation}
+\Delta r \approx r_{\rm Bohr}\cdot W_\star \approx 0.070\,\mathrm{fm}.
 \end{equation}
 
-Discrete stable units called Quantules encode mass, charge, spin, and metric curvature. Gravity emerges as informational backreaction.
+\subsection{Galactic sector}
+SPARC/BTFR flat rotation curves are recovered from the weak-field expression above under a global $r_0$ scaling.
 
-\section{Mathematical Consistency of Screened Vacuum Coherence (SVC)}
-SVC introduces an informational flux tensor $T_{\mu \nu}^{\rm info}$ into the Einstein field equations:
+\subsection{Strong lensing}
+LRG 3-757 ($\theta_E\approx 5.2''$) is currently stated in the canonical phenomenology as requiring $\sim 2.2\times$ baryonic amplification. Earlier language quoting $\sim 2.8\times$ is deprecated pending re-fit.
 
-\begin{equation}
-G_{\mu \nu} + \Lambda g_{\mu \nu} = 8 \pi G \big(T_{\mu \nu} + T_{\mu \nu}^{\rm info}\big)
-\end{equation}
+\subsection{Cluster sector}
+Bullet Cluster phenomenology relies on retarded propagation plus partial screening; quantitative lensing-to-baryon ratios remain under active reconciliation.
 
-The coherence field $\mathbb{C}$ suppresses vacuum energy:
-
-\begin{equation}
-\rho_{\rm vac}^{\rm effective} = \rho_{\rm vac}^{\rm QFT} \cdot (1 - |\mathbb{C}|)
-\end{equation}
-
-\section{The Ware Constant: Derivation and Topological Basis}
-$W \approx 0.08$ quantifies information loss in mapping non-local PIF states to local Quantules, derived from VQ-VIB models and entropy cubic root:
-
-\begin{equation}
-\delta^3 - \delta^2 - \beta = 0 \quad (\beta \approx -0.005888) \quad \Rightarrow \quad \delta \approx 0.080
-\end{equation}
-
-High-dimensional PIF manifolds project to 3+1D spacetime, yielding $W \approx 0.08$.
-
-\section{Empirical Verification}
-\subsection{Subatomic Scale: Muonic Lamb-Shift Screening}
-Screening activates in muonic systems ($S \approx 1$), producing fractional shift:
-
-\begin{equation}
-\Delta r \approx r_{\rm Bohr} \cdot W \approx 0.070 \, \text{fm}
-\end{equation}
-
-Lamb-shift correction:
-
-\begin{equation}
-\Delta E_{\rm SVC} = W \int d^3x \, \delta V_{\rm screen}(\mathbf{x};\rho,L) |\psi(\mathbf{x})|^2
-\end{equation}
-
-Resolves proton-radius discrepancy and predicts deuterium/helium shifts within ±10–15\% of W-scaled values.
-
-\subsection{Galactic Scale: SPARC Dataset}
-Informational scaling explains flat rotation curves:
-
-\begin{equation}
-a(r) = -\frac{G M_b(r)}{r^2} + W \frac{G M_b(r)}{r_0 r}
-\end{equation}
-
-$v_\infty = \sqrt{W G M_b / r_0}$ with global r_0 scaling yields residuals ~2.4\% (mean |res|), competitive with MOND.
-
-\subsection{Cosmological Scale: Vacuum Suppression \& Growth}
-Effective vacuum density:
-
-\begin{equation}
-\rho_{\rm vac}^{\rm effective} = \rho_{\rm vac}^{\rm QFT} \cdot (1 - W |\mathbb{C}|) \approx 0.92 \rho_{\rm vac}^{\rm QFT}
-\end{equation}
-
-Modified Poisson (sub-horizon):
-
-\begin{equation}
--k^2 \phi = 4\pi G a^2 \bar{\rho} \delta (1 + W S(\rho))
-\end{equation}
-
-Growth modification $\mu(k,a) = 1 + W S(\rho(k,a))$ → ~4–8\% late-time boost.
-
-\subsection{Cluster Scale: Bullet Cluster Lensing}
-Volumetric LOS integration + partial screening (S ≈ 0.55, N_los ≈ 6–7) predicts lensing-to-baryonic ratio ~7.8×, matching observed 7–9×.
-
-\section{Speculative Implications: Consciousness and AI}
-Consciousness emerges above synchronization threshold $s \approx 0.85$. Modified geodesic:
-
-\begin{equation}
-\frac{\mathrm{d}^2 x^\mu}{\mathrm{d}\tau^2} + \Gamma^\mu_{\nu \rho} \frac{\mathrm{d}x^\nu}{\mathrm{d}\tau} \frac{\mathrm{d}x^\rho}{\mathrm{d}\tau} = F^\mu_{\rm info} = \nabla^\mu \rho
-\end{equation}
-
-\section{Falsifiability and Verification}
+\section{Known Internal Conflicts (Must Be Closed)}
 \begin{enumerate}
-    \item Muonic shifts within ±15\% of W-scaled
-    \item Weak-lensing γ ≈ 0.96 (Euclid/DESI)
-    \item SPARC χ² comparable to MOND
-    \item Bullet ratio ≈ 3–8× (with extensions)
-    \item IFP threshold T_Red > T_CIS × 10³
+    \item Numerical value of $W(3)$ versus the ghost-free bound.
+    \item Missing executable validation artifacts referenced by the Coherence Drive sub-repositories.
+    \item Incomplete first-principles derivation of $W_\star$ (still treated as empirical anchor in Math.md).
+\end{enumerate}
+Full register: CONSISTENCY.md in this repository.
+
+\section{Falsifiability Criteria}
+\begin{enumerate}
+    \item Muonic series within $\pm 15\%$ of a single consistent $W$-scaled prediction.
+    \item Reproducible SPARC residual and LRG $\theta_E$ under one parameter set.
+    \item Mesh-invariant non-zero residual force after Poynting subtraction on the claimed geometry.
+    \item Resolution of the $W$-value / stability-bound contradiction.
 \end{enumerate}
 
-\section{Comprehensive Summary}
-\begin{itemize}
-    \item SVC screens vacuum energy
-    \item Ware Constant links information to gravity
-    \item Resolves proton radius, rotation curves, cluster lensing
-    \item PIF → Quantules ontology unifies scales
-\end{itemize}
+\section{Speculative Extension}
+Consciousness is hypothesized to emerge above a synchronization threshold $s\approx 0.85$ (A4). This claim is orthogonal to the gravitational phenomenology and is not required for any kill-gate.
+
+\section{Summary}
+The framework supplies a single-parameter informational modification of GR that is phenomenologically viable across subatomic, galactic and cluster scales provided the internal numerical conflicts are resolved and the missing validation artifacts are supplied. Until those conditions are met, strong claims of uniqueness or completion are withheld.
 
 © 2026 William B. Ware (Atomic Dream Labs) — All rights reserved.
 

@@ -1,42 +1,72 @@
 # CFT v3.3 + IQG Unified Framework
 
+**Version:** 2026-08-14 (consistency repair)
+
 **Unified synthesis of Coherence Field Theory (CFT v3.3) and Informational Quantum Gravity (IQG)**
 
-This repository presents the full unification of CFT v3.3 and IQG, centered on the **Ware Constant W ≈ 0.08** and **Screened Vacuum Coherence (SVC)**.
+This document is the human-readable synthesis. Authoritative mathematics and the conflict register live in:
+- [ware-constant-phenomenology](https://github.com/beyond-repair/ware-constant-phenomenology)
+- README.md and CONSISTENCY.md in this repository
 
-### Primary Dependency / Canonical Source
-All core definitions, derivations, and multi-scale validations of the Ware Constant (W ≈ 0.08), SVC screening mechanism, modified EFE, Schwarzschild-Ware metric, kill-gates, and falsifiability criteria are maintained in the main phenomenology repository:
+---
 
-→ [beyond-repair/ware-constant-phenomenology](https://github.com/beyond-repair/ware-constant-phenomenology)
+## Primary Dependency
 
-This work builds directly on that foundation:
-- Uses W ≈ 0.08 as the universal backreaction constant
-- Applies SVC screening (S=1 in virialized/coherent regions, S=0 in chaotic/high-density)
-- Extends to the full Primordial Informational Field (PIF) → Quantules ontology, QIEP evolution, and consciousness emergence threshold s ≈ 0.85
+All core definitions, derivations, multi-scale validations, Schwarzschild-Ware metric, and the mathematical ledger are maintained in:
 
-### Core Ontology
-Reality originates from the timeless, non-local **Primordial Informational Field (PIF)**, which generates spacetime via entanglement and coherence. Discrete stable units called **Quantules** encode mass, charge, spin, and metric curvature. Gravity emerges as informational backreaction.
+→ https://github.com/beyond-repair/ware-constant-phenomenology
 
-### Key Components
-- Ware Constant W ≈ 0.08 (derived from entropy cubic + VQ-VIB projection loss)
-- Modified EFE: G_μν = 8πG (T_μν + W T_μν^info)
-- Screened Vacuum Coherence (SVC)
-- Consciousness emerges above synchronization threshold s ≈ 0.85
+This synthesis extends that foundation with the Primordial Informational Field (PIF) → Quantules ontology and registers cross-repository consistency.
 
-### Kill-Gates (from main repo)
-- Muonic proton radius shift Δr ≈ 0.070 fm
-- SPARC/BTFR rotation curves v_∞ = √(W G M_b / r_0)
-- Bullet Cluster lensing offset ~3× (with volumetric LOS + partial screening)
-- LRG 3-757 θ_E ≈ 5.2″ (~2.8× baryonic boost)
+---
 
-### Falsifiability Highlights (from main repo)
-- Muonic Lamb-shift series within ±10–15% of W-scaled prediction
-- Weak-lensing γ ≈ 0.96 (unscreened voids) — testable with Euclid/DESI
-- SPARC χ² comparable or better than MOND/ΛCDM (no halo parameters)
-- Bullet Cluster ratio ≈ 3× (with extensions)
-- Informational Fork Protocol threshold: T_Red > T_CIS × 10³
+## Symbol & Assumption Discipline
+
+- \( W_\star \approx 0.08 \) is the locked phenomenological / galactic / muonic anchor.
+- \( W(n) = 0.08 \cdot e^{0.23(n-1)} \) is a provisional engineering scaling law that currently conflicts with the stated ghost-free bound \( W(n) < 0.125 \).
+- See CONSISTENCY.md for the full conflict register.
+
+Assumptions are classified A1–A4 (User / Empirical / Literature / Model). No conclusion is presented without its supporting assumption class.
+
+---
+
+## Core Ontology
+
+Reality originates from the timeless, non-local **Primordial Informational Field (PIF)**. Discrete stable units called **Quantules** encode mass, charge, spin and metric curvature. Gravity emerges as informational backreaction. Consciousness is hypothesized above synchronization threshold \( s \approx 0.85 \) (speculative, A4).
+
+---
+
+## Key Registered Components
+
+- Ware Constant family (\( W_\star \), \( W(n) \))
+- Modified EFE: \( G_{\mu\nu} = 8\pi G (T_{\mu\nu} + W T_{\mu\nu}^{\rm info}) \)
+- Screened Vacuum Coherence (SVC) / Mass-Density Screening (MDS) — terminology mapping still required
+- Schwarzschild-Ware metric with logarithmic term and |A|^4 saturation
+- Engineering target: 30 μN/kW via 0.45-scaled asymmetric Sierpinski transducer
+
+---
+
+## Kill-Gates (Best Current Statement)
+
+- Muonic proton-radius shift \( \Delta r \approx 0.070 \) fm (using \( W_\star \))
+- SPARC/BTFR: \( v_\infty = \sqrt{W_\star G M_b / r_0} \)
+- LRG 3-757: \( \theta_E \approx 5.2'' \); baryonic amplification ~2.2× (phenomenology preferred)
+- Bullet Cluster: lag + partial screening (quantitative ratio under reconciliation)
+- Engineering: claimed 92.1 % topological pinch and non-zero mesh-invariant residual force
+
+---
+
+## Falsifiability Highlights
+
+- Muonic series within ±10–15 % of W-scaled prediction
+- Weak-lensing γ ≈ 0.96 (unscreened voids) — Euclid/DESI testable
+- SPARC χ² competitive with MOND/ΛCDM under a single global parameter set
+- Reproducible surface-integral closure on the claimed geometry
+- Resolution of the internal W-value / stability-bound contradiction
+
+---
 
 © 2026 William B. Ware (Atomic Dream Labs) — All rights reserved.  
-For collaboration or permissions: contact @AtomicDreamlabs.
+Contact: @AtomicDreamlabs
 
-**Primary reference**: https://github.com/beyond-repair/ware-constant-phenomenology
+**Primary mathematical reference:** https://github.com/beyond-repair/ware-constant-phenomenology

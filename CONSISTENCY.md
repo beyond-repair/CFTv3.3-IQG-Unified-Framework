@@ -1,52 +1,52 @@
 # Consistency & Audit Ledger — CFTv3.3-IQG-Unified-Framework
 
-**Last audit:** 2026-08-14 (entropic derivation & lensing correction)
+**Last audit:** 2026-08-14 (axiom elevation & geodesic δ_sat pass)
 
 ## 1. Symbol Registry
 
-\(W_\star = 1/(4\pi) \approx 0.079577\) under solid-angle axioms E1–E4 (see WSTAR_ENTROPIC_DERIVATION.md).  
-Rounded value 0.08 acceptable for galactic phenomenology.  
-Option A: M2 is geometric enhancement only.
+\(W_\star = 1/(4\pi)\approx 0.079577\) at tree level under canonical boundary matching (monopole \(Y_{00}\) normalization; \(c_\star=1\)).  
+See WSTAR_ACTION_DERIVATION.md. Option A: M2 geometric only.
 
 ## 2. Conflict Register
 
 ### C1 — Ware Constant Value
-**RESOLVED.** Entropic / solid-angle derivation yields \(1/(4\pi)\) under explicit axioms. Bridge from axioms to the Proca+Einstein action remains open.
+**RESOLVED at matching level.** E2–E4 reduced to spherical-harmonic matching conditions on a 2-sphere screen. E1 (existence of screen) remains an infrared input. Bulk confirmation of \(c_\star=1\) open.
 
 ### C2 — Lensing Amplification
-**RESOLVED at the phenomenological level.** Multiplicative boost
-\(\theta_E = \theta_{E,{\rm GR}}(1+\delta_{\rm eff})\) with soft saturation \(\delta_{\rm sat}=1.2\) recovers factor 2.2. Additive galactic-potential deflection is too small at Gpc scales and is not used. First-principles origin of \(\delta_{\rm sat}\) still open (mapped to \(\xi\)).
+**Phenomenologically resolved** (multiplicative + \(\delta_{\rm sat}=1.2\) → factor 2.2).  
+**Geodesic result:** additive \(\Phi_W\) deflection at \(b=R_E\) gives only O(0.1) corrections — **cannot** derive \(\delta_{\rm sat}\approx 1.2\) from the galactic-scale metric. Multiplicative \(\delta_{\rm sat}\) requires a projection of \(T^{\rm info}\) onto the lens plane (open).
 
 ### C3 — Bullet Cluster
 Open.
 
 ### C4 — Executable Artifacts
-**RESOLVED** for current scope.
+Resolved for current scope.
 
 ### C5 — First-Principles \(W_\star\)
-**PARTIALLY RESOLVED.** Solid-angle argument under E1–E4 gives \(1/(4\pi)\). Elevating E1–E4 to theorems of the field action is the remaining step.
+**Advanced.** Boundary effective-action matching yields \(1/(4\pi)\) under \(c_\star=1\). Full bulk reduction open.
 
-### C6 — SPARC Fit Quality
+### C6 — SPARC
 - Macro \(r_0(M_b)\): **VERIFIED**.
-- Local χ² (Υ, β, γ; macro frozen): median **~12.3**; 26% < 5; 46% < 10. Improved; not O(1).
+- Local (additive Ware + soft radial): median **~11.9**; 29% < 5; 45% < 10.
+- RAR-style \(a_0=WGM/r_0^2\): **rejected** (median > 300).
 
 ## 3. Falsification Protocol Status
 
 | Criterion | Status |
 |-----------|--------|
-| Single consistent W in gravity | Pass (\(1/(4\pi)\)) |
-| Macro \(r_0(M_b)\) scaling | **Pass** |
-| Local SPARC \(\chi^2\sim\mathcal{O}(1)\) | Median ~12; open |
-| Lensing factor ~2.2 | **Pass** (multiplicative + saturation) |
-| Ghost-free under Option A | Pass |
-| Full-wave surface residual | EFIE BEM present |
+| Single consistent W | Pass (\(1/(4\pi)\)) |
+| Macro \(r_0(M_b)\) | **Pass** |
+| Local SPARC O(1) | Median ~11.9; open |
+| Lensing factor ~2.2 | Pass (multiplicative) |
+| δ_sat from additive geodesics | **Fails** — must be multiplicative/projection |
+| Ghost-free Option A | Pass |
 
 ## 4. Priority Remaining Work
 
-1. Elevate axioms E1–E4 to consequences of the Proca+Einstein action.
-2. Local profile / coupling structure for median χ²_red → O(1).
-3. First-principles origin of \(\delta_{\rm sat}\).
-4. Bullet Cluster lag calculation.
+1. Bulk Proca → boundary reduction confirming \(c_\star=1\).
+2. Local law for median χ²_red → O(1).
+3. Lens-plane projection of \(T^{\rm info}\) to derive multiplicative \(\delta_{\rm sat}\).
+4. Bullet Cluster lag.
 
 ---
 

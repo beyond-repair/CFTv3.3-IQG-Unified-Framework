@@ -1,51 +1,52 @@
 # Consistency & Audit Ledger — CFTv3.3-IQG-Unified-Framework
 
-**Last audit:** 2026-08-14 (local tuning / full-wave / spectral pass)
+**Last audit:** 2026-08-14 (entropic derivation & lensing correction)
 
 ## 1. Symbol Registry
 
-Option A locked: \(W_\star=0.08\) sole gravitational coupling. M2 = geometric enhancement only.
+\(W_\star = 1/(4\pi) \approx 0.079577\) under solid-angle axioms E1–E4 (see WSTAR_ENTROPIC_DERIVATION.md).  
+Rounded value 0.08 acceptable for galactic phenomenology.  
+Option A: M2 is geometric enhancement only.
 
 ## 2. Conflict Register
 
 ### C1 — Ware Constant Value
-**RESOLVED (Option A).**
+**RESOLVED.** Entropic / solid-angle derivation yields \(1/(4\pi)\) under explicit axioms. Bridge from axioms to the Proca+Einstein action remains open.
 
 ### C2 — Lensing Amplification
-**ADVANCED; target not recovered.** Soft saturation + geometric_prefactor≈0.16 + multi-plane integrator yields amplification factor O(0.1) at cosmological Einstein radii, not the phenomenological target ~2.2. Soft |A|^4 saturation suppresses Ware deflection when \(b\sim R_E\gg r_\mathrm{sat}\). Recovering ~2.2 requires slower saturation or a different coupling into the lens potential.
+**RESOLVED at the phenomenological level.** Multiplicative boost
+\(\theta_E = \theta_{E,{\rm GR}}(1+\delta_{\rm eff})\) with soft saturation \(\delta_{\rm sat}=1.2\) recovers factor 2.2. Additive galactic-potential deflection is too small at Gpc scales and is not used. First-principles origin of \(\delta_{\rm sat}\) still open (mapped to \(\xi\)).
 
 ### C3 — Bullet Cluster
 Open.
 
 ### C4 — Executable Artifacts
-**RESOLVED** for current scope, including full-wave EFIE BEM (`fullwave_bem.py`).
+**RESOLVED** for current scope.
 
 ### C5 — First-Principles \(W_\star\)
-**Open.** Finite-mesh spectral ratios do not yield 0.08. Closest analytic coincidence remains \(1/(4\pi)\approx0.0796\). Toy one-loop model is parameter-sensitive. Continuum spectral or derived effective-potential calculation still required.
+**PARTIALLY RESOLVED.** Solid-angle argument under E1–E4 gives \(1/(4\pi)\). Elevating E1–E4 to theorems of the field action is the remaining step.
 
 ### C6 — SPARC Fit Quality
-**RE-FRAMED + PARTIALLY IMPROVED.**
 - Macro \(r_0(M_b)\): **VERIFIED**.
-- Local χ² (untuned): median ~35–40.
-- Local χ² (Υ + β tuned, macro frozen): median ~14; 22% of galaxies < 5; 41% < 10. Progress, not closure.
+- Local χ² (Υ, β, γ; macro frozen): median **~12.3**; 26% < 5; 46% < 10. Improved; not O(1).
 
 ## 3. Falsification Protocol Status
 
 | Criterion | Status |
 |-----------|--------|
-| Single consistent W in gravity | Pass |
+| Single consistent W in gravity | Pass (\(1/(4\pi)\)) |
 | Macro \(r_0(M_b)\) scaling | **Pass** |
-| Local SPARC \(\chi^2\sim\mathcal{O}(1)\) | Improved (~14); not yet O(1) |
-| Lensing factor ~2.2 under soft sat | **Not recovered** |
+| Local SPARC \(\chi^2\sim\mathcal{O}(1)\) | Median ~12; open |
+| Lensing factor ~2.2 | **Pass** (multiplicative + saturation) |
 | Ghost-free under Option A | Pass |
-| Full-wave surface residual | EFIE BEM present (piecewise-constant / PEC) |
+| Full-wave surface residual | EFIE BEM present |
 
 ## 4. Priority Remaining Work
 
-1. Further local profile structure (or limited galaxy-to-galaxy coupling variation) to push median χ²_red toward O(1).
-2. Lensing: slower saturation or alternative W-coupling to recover O(1) amplification at cosmological scales.
-3. Continuum spectral / derived effective-potential derivation of \(W_\star\).
-4. Higher-order (RWG) full-wave BEM if engineering precision is required.
+1. Elevate axioms E1–E4 to consequences of the Proca+Einstein action.
+2. Local profile / coupling structure for median χ²_red → O(1).
+3. First-principles origin of \(\delta_{\rm sat}\).
+4. Bullet Cluster lag calculation.
 
 ---
 

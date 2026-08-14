@@ -1,53 +1,56 @@
 # Consistency & Audit Ledger — CFTv3.3-IQG-Unified-Framework
 
-**Last audit:** 2026-08-14 (axiom elevation & geodesic δ_sat pass)
+**Last audit:** 2026-08-14 (exhaustive multi-repo audit)
 
 ## 1. Symbol Registry
 
-\(W_\star = 1/(4\pi)\approx 0.079577\) at tree level under canonical boundary matching (monopole \(Y_{00}\) normalization; \(c_\star=1\)).  
-See WSTAR_ACTION_DERIVATION.md. Option A: M2 geometric only.
+\(W_\star = 1/(4\pi)\approx 0.079577\) — tree-level monopole matching (\(c_\star=1\) convention).  
+Option A: M2 geometric only.  
+Macro: \(r_0=0.45\,\mathrm{kpc}\,(M_b/10^{11}M_\odot)^{0.40}\) — verified.
 
 ## 2. Conflict Register
 
-### C1 — Ware Constant Value
-**RESOLVED at matching level.** E2–E4 reduced to spherical-harmonic matching conditions on a 2-sphere screen. E1 (existence of screen) remains an infrared input. Bulk confirmation of \(c_\star=1\) open.
+| ID | Topic | Status |
+|----|-------|--------|
+| C1 | W value | **Resolved** at matching level |
+| C2 | Lensing ×2.2 | **Phenomenological pass** (multiplicative + δ_sat=1.2); additive geodesics fail; lens-plane ξ structure in place |
+| C3 | Bullet Cluster | **Minimal r0/c lag FAILS** observed O(100 kpc) offsets — open / potential falsifier |
+| C4 | Executables | Present across stack |
+| C5 | Bulk c_star=1 | Matching convention; full non-minimal bulk open |
+| C6 | Local SPARC | Median χ²_red ~11.9; not O(1) |
 
-### C2 — Lensing Amplification
-**Phenomenologically resolved** (multiplicative + \(\delta_{\rm sat}=1.2\) → factor 2.2).  
-**Geodesic result:** additive \(\Phi_W\) deflection at \(b=R_E\) gives only O(0.1) corrections — **cannot** derive \(\delta_{\rm sat}\approx 1.2\) from the galactic-scale metric. Multiplicative \(\delta_{\rm sat}\) requires a projection of \(T^{\rm info}\) onto the lens plane (open).
+## 3. Repo Alignment (all 10)
 
-### C3 — Bullet Cluster
-Open.
+| Repo | Status |
+|------|--------|
+| CFTv3.3-IQG-Unified-Framework | Ledger active |
+| ware-constant-phenomenology | Canonical math + pipelines |
+| stress-tensor-modification | Evaluator + BEM/EFIE |
+| sierpinski-geometry-045 | Generator working |
+| coherence-drive | Pointer aligned |
+| m2-renormalization-law | Option A aligned |
+| -ware-constant-derivation | Provisional aligned |
+| momentum-closure | Conceptual |
+| topological-pinch | Hypothesis (92% unverified) |
+| thrust-target-30 | Design goal only |
 
-### C4 — Executable Artifacts
-Resolved for current scope.
+## 4. Falsification Protocol
 
-### C5 — First-Principles \(W_\star\)
-**Advanced.** Boundary effective-action matching yields \(1/(4\pi)\) under \(c_\star=1\). Full bulk reduction open.
-
-### C6 — SPARC
-- Macro \(r_0(M_b)\): **VERIFIED**.
-- Local (additive Ware + soft radial): median **~11.9**; 29% < 5; 45% < 10.
-- RAR-style \(a_0=WGM/r_0^2\): **rejected** (median > 300).
-
-## 3. Falsification Protocol Status
-
-| Criterion | Status |
+| Criterion | Result |
 |-----------|--------|
-| Single consistent W | Pass (\(1/(4\pi)\)) |
-| Macro \(r_0(M_b)\) | **Pass** |
-| Local SPARC O(1) | Median ~11.9; open |
-| Lensing factor ~2.2 | Pass (multiplicative) |
-| δ_sat from additive geodesics | **Fails** — must be multiplicative/projection |
+| Macro r0(Mb) | **Pass** |
+| Local SPARC O(1) | Open (~12) |
+| Lensing ×2.2 multiplicative | Pass |
+| Bullet r0/c lag | **Fail** |
 | Ghost-free Option A | Pass |
 
-## 4. Priority Remaining Work
+## 5. Priority Remaining Work
 
-1. Bulk Proca → boundary reduction confirming \(c_\star=1\).
-2. Local law for median χ²_red → O(1).
-3. Lens-plane projection of \(T^{\rm info}\) to derive multiplicative \(\delta_{\rm sat}\).
-4. Bullet Cluster lag.
+1. Viable Bullet lag mechanism or revise cluster-scale coherence.
+2. Local acceleration law → median χ²_red O(1).
+3. Non-minimal bulk → boundary proof of c_star.
+4. |A|^4 derivation of ξ_cap / δ_sat.
 
 ---
 
-Authoritative verified-state record for the synthesis layer.
+Authoritative verified-state record. No speculative result is marked closed.

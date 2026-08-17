@@ -1,6 +1,6 @@
 # Consistency & Audit Ledger — CFTv3.3-IQG-Unified-Framework
 
-**Last audit:** 2026-08-15 (simultaneous three-front pass)
+**Last audit:** 2026-08-17 (Group 1 hygiene pass)
 
 ## 1. Symbol Registry
 
@@ -13,36 +13,40 @@ Macro: \(r_0=0.45\,\mathrm{kpc}\,(M_b/10^{11}M_\odot)^{0.40}\) — verified.
 | ID | Topic | Status |
 |----|-------|--------|
 | C1 | W value | **Resolved** at matching level |
-| C2 | Lensing ×2.2 | Multiplicative + δ_sat; \|A\|^4 structure (semi-derived) |
-| C3 | Bullet Cluster | Simple r0/c **FAIL**; Model D (cluster ξ≈800) open candidate |
-| C4 | Executables | Present |
-| C5 | Bulk c_star=1 | Matching convention; non-minimal bulk open |
-| C6 | Local SPARC | Median χ²_red **~9.1** (single-digit; not O(1)) |
+| C2 | Lensing ×2.2 | Multiplicative + δ_sat (semi-derived) |
+| C3 | Bullet Cluster | Simple r0/c **FAIL**; Model D open |
+| C4 | Executables | Present (see hygiene notes) |
+| C5 | Bulk c_star=1 | Matching convention; bulk open |
+| C6 | Local SPARC | Median χ²_red **~9.1** |
 
-## 3. Three-Front Results (2026-08-15)
+## 3. Hygiene Pass (2026-08-17)
 
-| Front | Outcome |
-|-------|--------|
-| Bullet alt lag | Model D (cluster-only ξ~800) preserves galactic lock; needs first-principles origin. Models A/C need n_eff~800. Universal steeper β breaks macro lock. **OPEN** |
-| Local SPARC | Continuous optimization → median **9.1**; 36%<5; 53%<10. Macro frozen. **Improved, not O(1)** |
-| Bulk / δ_sat | Y00 and I_4 give 1/(4π) proven; c_star=1 convention; ξ_cap=δ_sat/W≈15.08 matched to target; λ_A from bulk **OPEN** |
+| Action | Repo |
+|--------|------|
+| Quarantined `physics_evaluator_snippet.py` (raises on import) | stress-tensor-modification |
+| Canonical SPARC entrypoint `sparc_run.py` → default `sparc_o1` | ware-constant-phenomenology |
+| Marked CFT-v3.1 **SUPERSEDED** | CFT-v3.1 |
+| Stub READMEs: pointer / hypothesis / design-goal only | coherence-drive, derivation, m2, momentum, pinch, thrust |
+
+GitHub **short descriptions** may still lag until edited in repo Settings (CLI unavailable this pass).
 
 ## 4. Falsification Protocol
 
 | Criterion | Result |
 |-----------|--------|
 | Macro r0(Mb) | **Pass** |
-| Local SPARC O(1) | Open (median ~9) |
-| Lensing ×2.2 | Pass (multiplicative) |
+| Local SPARC O(1) | Open (~9) |
+| Lensing ×2.2 | Pass |
 | Bullet r0/c | **Fail** |
 | Ghost-free Option A | Pass |
 
 ## 5. Priority Remaining Work
 
-1. First-principles cluster collective scale ξ (Bullet Model D).
-2. Local χ² → O(1).
-3. Non-minimal bulk confirmation of c_star.
-4. λ_A from bulk → numerical δ_sat.
+1. Bullet Model D (cluster ξ) from first principles  
+2. Local χ² → O(1)  
+3. Non-minimal bulk c_star  
+4. λ_A → numerical δ_sat  
+5. Optional: update GitHub UI descriptions to match READMEs  
 
 ---
 

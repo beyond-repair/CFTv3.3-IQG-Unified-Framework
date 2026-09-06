@@ -1,6 +1,6 @@
 # Consistency & Audit Ledger — CFTv3.3-IQG-Unified-Framework
 
-**Last audit:** 2026-09-06 (Sweep-080 — classification lock; no new physics claims)
+**Last audit:** 2026-09-06 (Sweep-082 — live tree + CI absence re-verified; no new physics claims)
 
 ## 1. Symbol Registry
 
@@ -25,23 +25,17 @@ Deprecated for new work: $W(n)=0.08\,e^{0.23(n-1)}$.
 | C5 | Bulk c_star=1 | Matching convention; bulk open |
 | C6 | Local SPARC | Median χ²_red **~9.1** (not O(1)) |
 
-## 3. Hygiene Pass (2026-08-17) + Sweep-080 note
-
-| Action | Repo |
-|--------|------|
-| Quarantined `physics_evaluator_snippet.py` (raises on import) | stress-tensor-modification |
-| Canonical SPARC entrypoint `sparc_run.py` → default `sparc_o1` | ware-constant-phenomenology |
-| Marked CFT-v3.1 **SUPERSEDED** | CFT-v3.1 |
-| Stub READMEs: pointer / hypothesis / design-goal only | coherence-drive, derivation, m2, momentum, pinch, thrust |
-| RESEARCH.md classification lock | this repo (Sweep-080) |
+## 3. Hygiene Pass + Sweep-082 note
 
 This tree contains only markdown/TeX/LICENSE. No tests, no CI — acceptable for a ledger repo. Physics executables must remain in satellite repos.
+
+Sweep-082 Actions API: workflows total_count=0. Releases=[]. Tags=[].
 
 ## 4. Falsification Protocol
 
 | Criterion | Result |
 |-----------|--------|
-| Macro r0(Mb) | **Pass** (prior record; not re-run Sweep-080) |
+| Macro r0(Mb) | **Pass** (prior record; not re-run Sweep-082) |
 | Local SPARC O(1) | Open (~9) |
 | Lensing ×2.2 | Pass (prior record) |
 | Bullet r0/c | **Fail** |

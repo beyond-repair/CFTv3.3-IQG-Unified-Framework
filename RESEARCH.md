@@ -1,18 +1,18 @@
 # RESEARCH lock — CFTv3.3-IQG-Unified-Framework
 
 **Classification:** RESEARCH  
-**Sweep:** 082 (2026-09-06)  
+**Sweep:** 106 (2026-09-07); prior 082 (2026-09-06)  
 **Governing source:** [ADL-Governance](https://github.com/beyond-repair/ADL-Governance)
 
 This repository is a **synthesis / consistency ledger**, not an ACTIVE product runtime and not an experimental confirmation of Coherence Field Theory or Informational Quantum Gravity.
 
-## Tree (Sweep-082 live)
+## Tree (Sweep-106)
 
-6 blobs only: `README.md`, `RESEARCH.md`, `CONSISTENCY.md`, `LICENSE`, `CFTv3.3-IQG-Unified-Framework.md`, `CFTv3.3-IQG-Unified-Framework.tex`.
+Ledger blobs: `README.md`, `RESEARCH.md`, `CONSISTENCY.md`, `GOVERNANCE.md`, `LICENSE`, `CFTv3.3-IQG-Unified-Framework.md`, `CFTv3.3-IQG-Unified-Framework.tex`.
+Hygiene additions: `tests/test_docs.py`, `.github/workflows/ci.yml`.
 
-- Workflows: **none** (`actions_list` total_count=0)
 - Releases / tags: **none**
-- Tests / executables: **none in this tree** (by design)
+- Physics executables: **none in this tree** (by design)
 
 ## Allowed claims
 
@@ -37,3 +37,4 @@ This repository is a **synthesis / consistency ledger**, not an ACTIVE product r
 | Evaluators | stress-tensor-modification |
 
 Do not add SPARC runners or mesh generators to this tree. Do not GitHub-archive while it remains the CFT symbol ledger.
+Green `docs-ci` ≠ physics validation.

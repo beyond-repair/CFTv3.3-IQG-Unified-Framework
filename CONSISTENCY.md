@@ -1,6 +1,6 @@
 # Consistency & Audit Ledger — CFTv3.3-IQG-Unified-Framework
 
-**Last audit:** 2026-09-06 (Sweep-082 — live tree + CI absence re-verified; no new physics claims)
+**Last audit:** 2026-09-07 (Sweep-106 — docs CI + presence tests; no new physics claims)
 
 ## 1. Symbol Registry
 
@@ -25,17 +25,17 @@ Deprecated for new work: $W(n)=0.08\,e^{0.23(n-1)}$.
 | C5 | Bulk c_star=1 | Matching convention; bulk open |
 | C6 | Local SPARC | Median χ²_red **~9.1** (not O(1)) |
 
-## 3. Hygiene Pass + Sweep-082 note
+## 3. Hygiene Pass + Sweep-106 note
 
-This tree contains only markdown/TeX/LICENSE. No tests, no CI — acceptable for a ledger repo. Physics executables must remain in satellite repos.
+Ledger remains markdown/TeX/LICENSE plus GOVERNANCE.md. Physics executables must remain in satellite repos.
 
-Sweep-082 Actions API: workflows total_count=0. Releases=[]. Tags=[].
+Sweep-106 added docs-presence pytest and `docs-ci`. That pipeline does not recompute r0, SPARC, or lensing.
 
 ## 4. Falsification Protocol
 
 | Criterion | Result |
 |-----------|--------|
-| Macro r0(Mb) | **Pass** (prior record; not re-run Sweep-082) |
+| Macro r0(Mb) | **Pass** (prior record; not re-run Sweep-106) |
 | Local SPARC O(1) | Open (~9) |
 | Lensing ×2.2 | Pass (prior record) |
 | Bullet r0/c | **Fail** |

@@ -17,6 +17,8 @@ The Ware / CFT stack lives in many repos. Without a **single place** that regist
 
 This repository is that **synthesis layer** — not the SPARC runner, not the mesh generator, not a thruster.
 
+Sweep-106 (2026-09-07): RESEARCH lock + docs-presence CI. Green CI is not experimental confirmation.
+
 ## Why you need it
 
 | Role | Use |

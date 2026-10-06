@@ -1,7 +1,7 @@
 # RESEARCH lock — CFTv3.3-IQG-Unified-Framework
 
 **Classification:** RESEARCH  
-**Sweep:** 106 (2026-09-07); prior 082 (2026-09-06)  
+**Sweep:** 254 reconfirm (2026-10-06); lock origin 106 (2026-09-07); prior 082 (2026-09-06)  
 **Governing source:** [ADL-Governance](https://github.com/beyond-repair/ADL-Governance)
 
 This repository is a **synthesis / consistency ledger**, not an ACTIVE product runtime and not an experimental confirmation of Coherence Field Theory or Informational Quantum Gravity.
@@ -9,7 +9,7 @@ This repository is a **synthesis / consistency ledger**, not an ACTIVE product r
 ## Tree (Sweep-106)
 
 Ledger blobs: `README.md`, `RESEARCH.md`, `CONSISTENCY.md`, `GOVERNANCE.md`, `LICENSE`, `CFTv3.3-IQG-Unified-Framework.md`, `CFTv3.3-IQG-Unified-Framework.tex`.
-Hygiene additions: `tests/test_docs.py`, `.github/workflows/ci.yml`.
+Hygiene additions: `tests/test_docs.py`, `tests/test_symbol_lock.py`, `.github/workflows/ci.yml`.
 
 - Releases / tags: **none**
 - Physics executables: **none in this tree** (by design)

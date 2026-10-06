@@ -1,6 +1,6 @@
 # Consistency & Audit Ledger — CFTv3.3-IQG-Unified-Framework
 
-**Last audit:** 2026-09-07 (Sweep-106 — docs CI + presence tests; no new physics claims)
+**Last audit:** 2026-10-06 (Sweep-254 — symbol-lock reconfirm; no new physics claims). Prior: 2026-09-07 Sweep-106.
 
 ## 1. Symbol Registry
 
@@ -30,12 +30,13 @@ Deprecated for new work: $W(n)=0.08\,e^{0.23(n-1)}$.
 Ledger remains markdown/TeX/LICENSE plus GOVERNANCE.md. Physics executables must remain in satellite repos.
 
 Sweep-106 added docs-presence pytest and `docs-ci`. That pipeline does not recompute r0, SPARC, or lensing.
+Sweep-254 locks the frozen `n-3` string and the deprecated `n-1` label. It does not recompute r0, SPARC, or lensing.
 
 ## 4. Falsification Protocol
 
 | Criterion | Result |
 |-----------|--------|
-| Macro r0(Mb) | **Pass** (prior record; not re-run Sweep-106) |
+| Macro r0(Mb) | **Pass** (prior record; not re-run Sweep-254) |
 | Local SPARC O(1) | Open (~9) |
 | Lensing ×2.2 | Pass (prior record) |
 | Bullet r0/c | **Fail** |

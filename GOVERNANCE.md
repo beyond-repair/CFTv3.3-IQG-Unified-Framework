@@ -1,7 +1,7 @@
 # Governance — CFTv3.3-IQG-Unified-Framework
 
 **Classification:** RESEARCH  
-**Sweep:** 106 (2026-09-07)  
+**Sweep:** 254 reconfirm (2026-10-06); lock origin 106 (2026-09-07)  
 **Governing source:** [ADL-Governance](https://github.com/beyond-repair/ADL-Governance)
 
 ## Lifecycle
@@ -25,4 +25,4 @@ None of those gates are met. Classification remains **RESEARCH**.
 
 ## CI meaning
 
-`docs-ci` verifies required ledger files exist. Green CI ≠ physics validation.
+`docs-ci` verifies required ledger files and the frozen `n-3` symbol lock. Green CI ≠ physics validation.
